@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+    <head>
+   <title>Arav Music Shop - Buy guitars, drums and more</title>
+        <style>
+            * {
+                font-family: Sofia Pro;
+                font-weight: 300;
+            }
+            body, ul, li {
+                margin: 0;
+                padding: 0;
+            }
+            p, li, h1, h2, h3, h4 {
+                color: darkslategray;
+            }
+            body {
+                background-color: azure;
+            }
+            .wrapper {
+                width: 96%;
+                max-width: 1200px;
+                margin: 0 auto;
+                padding: 0 2%;
+            }
+            header {
+                background-color: papayawhip;
+                padding: 10px 0;
+            }
+            .logo {
+                margin: 0;
+                background: url(logo.png);
+                background-size: 70px 70px;
+                float: left;
+                width: 70px;
+                height: 70px;
+                border-radius: 50%;
+            }
+            header nav {
+                float: right;
+            }
+            header:after {
+                content: "";
+                clear: both;
+                display: block;
+            }
+            header nav li {
+                list-style-type: none;
+                float: left;
+                margin-left: 20px;
+                margin-top: 20px;
+            }
+            header nav li a {
+                text-decoration: none;
+                color: darkslategray;
+                font-size: 15px;
+                text-transform: uppercase;
+            }
+            #main-banner {
+                width: 100%;
+                max-height: 500px;
+                overflow: hidden;
+            }
+            #main-banner img {
+                width: 100%;
+            }
+            #slider {
+                overflow: hidden;
+            }
+            #slides {
+                position: relative;
+                width: 500%;
+                margin: 0;
+                left: 0;
+                text-align: left;
+                font-size: 0;
+                animation: 18s slidy infinite;
+            }
+            #slides img {
+                width: 20%;
+                float: left;
+            }
+            #usp {
+                margin-top: 60px;
+            }
+            #usp li{
+                float: left;
+                width: 23%;
+                padding: 1%;
+                text-align: center;
+                list-style-type: none;
+            }
+            #usp li img {
+                height: 80px;
+                padding: 20px;
+                background-color: coral;
+                border-radius: 50%;
+            }
+            #usp li h2 {
+                font font-size: 16px;
+                font-weight: 400;
+            }
+            #usp:after {
+                content: "";
+                display: block;
+                clear: both;
+            }
+            #products {
+                padding-top: 30px;
+                margin-top: 30px;
+                border-top: 2px solid lightgrey;
+            }
+            #products li {
+                float: left;
+                width: 32%;
+                list-style-type: none;
+                text-align: center;
+            }
+            #products li img {
+                width: 100%;
+            }
+            #products li:nth-child(even) {
+                margin: 0 1%;
+                
+            }
+            #products:after {
+                content: "";
+                display: block;
+                clear: both;
+            }
+            #our-products {
+                text-align: center;
+            }
+            footer {
+                width: 100%;
+                background-color: darkslategrey;
+                padding: 30px 0;
+                margin-top: 60px;
+            }
+            footer ul {
+                float: left;
+                width: 48%;
+                margin: 1%;
+            }
+            footer ul h3 {
+                font-size: 30px;
+                color: azure;
+            }
+            footer ul li {
+                list-style-type: none;
+                font-size: 15px;
+                color: azure;
+            }
+            footer:after {
+                content: "";
+                display: block;
+                clear: both;
+            }
+            
+            /* Animation */
+            @keyframes slidy {
+                0% { left: 0%; }
+                28% { left: 0%; }
+                33% { left: -100%; }
+                61% { left: -100%; }
+                66% { left: -200%; }
+                94% { left: -200%; }
+                100% { left: 0%; }       
+            }
+            
+            .greet{
+                background-color: #48C9B0;
+                font-family: fantasy;
+                font-size: 20px;
+                color: white;
+                padding-top: 50px;
+                padding-bottom: 50px;
+                text-align: center;
+                
+                
+            }
+        </style>
+    </head>
+    <body onload="myFunction()">
+        <!-- Header Starts -->
+         <header>
+               <div class="wrapper">
+                  <div class="logo"></div>
+                   <nav>
+                       <ul>
+                          <li><a href="#">Home</a></li>
+                          <li><a href="#">About Us</a></li>
+                          <li><a href="https://www.bajaao.com/">Products</a></li>
+                          <li><a href="file:///C:/Users/Asus/Desktop/Website%20Development/Mobile%20Specification.html">Visit my second Website</a></li>
+                       </ul>
+                   </nav>
+             </div>
+        </header>
+        <!-- Header Ends -->
+        
+        <!--Greet Section Starts -->
+        <div class="greet">
+        <p id="namesec" ></p>
+            </div>
+        
+        
+        <!-- Greet Section Ends -->
+        
+        <!-- Banner Starts -->
+        <div id="main-banner">
+           <div id="slider">
+               <div id="slides">
+                   <img src="Banner.jpg" alt="banner">
+                   <img src="banner%202.jpg" alt="banner">
+                   <img src="banner%203_edited.jpg" alt="banner">
+               </div>
+            </div>
+        </div>
+        <!-- Banner Ends -->
+        
+        <!-- USP Section Starts -->
+        <div class="wrapper">'
+             <section id="usp">
+                 <ul>
+                     <li>
+                         <img src="saxophone.png">
+                         <h2>Wide Range of Products</h2>
+                     </li>
+                     <li>
+                         <img src="shop.png">
+                         <h2>Multiple Stores</h2>
+                     </li>
+                     <li>
+                         <img src="team.png">
+                         <h2>Happy Customers</h2>
+                     </li>
+                     <li>
+                         <img src="best-seller.png">
+                         <h2>Satisfaction Guaranteed</h2>
+                     </li>
+                 </ul>
+            </section>
+        </div>
+        <!-- USP Section Ends -->
+        
+        <!-- Product Starts -->
+        <div class="wrapper">
+            <section id="products">
+                <h2 id="our-products">Our Products</h2>
+                <ul>
+                    <li>
+                        <img src="Acoustic%20Guitar.jpg">
+                        <h2>Acoustic Guitar</h2>
+                        <p>An acoustic guitar is a fretted musical instrument that produces sound via vibrating strings above a hollow chamber in the guitar's body. The vibrations carry through the air and do not require electrical amplification (although many acoustic guitars also function as electric guitars).</p>
+                    </li>
+                    <li>
+                        <img src="Drums.png">
+                        <h2>Drums</h2>
+                        <p>The drum is a member of the percussion group of musical instruments. ... Drums consist of at least one membrane, called a drumhead or drum skin, that is stretched over a shell and struck, either directly with the player's hands, or with a percussion mallet, to produce sound.</p>
+                    </li>
+                    <li>
+                        <img src="Violin.jpg">
+                        <h2>Violin</h2>
+                        <p>The violin, sometimes known as a fiddle, is a wooden chordophone in the violin family. Most violins have a hollow wooden body. It is the smallest and thus highest-pitched instrument in the family in regular use.</p>
+                    </li>
+                </ul>
+            </section>
+        </div>
+        <!-- Product Ends -->
+        
+        <!-- Footer Starts -->
+        <footer>
+            <div class="wrapper">
+                <ul>
+                    <h3>Get In Touch</h3>
+                    <li>Arav Music Shop - Delhi, India</li>
+                    <li>Address: Sector-22, Delhi Apartments</li>
+                    <li>Call Today - +91 9855586677</li>
+                    <li>E-mail ID - arav.ashish.aaa5@gmail.com</li>
+                </ul>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/YNZCciWx8_8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </footer>
+        <!-- Footer Ends -->
+        
+        <!--JS Codes-->
+        <script>
+            
+            function myFunction(){
+                var name=prompt("Hello user, What is your name?","user");
+                var bg=prompt("What is your favourite colour?","Orange");
+                
+                var msg;
+                var date= new Date();
+                var hour=date.getHours();
+                
+                if (hour<12){
+                    msg="Hello "+name+" Good Morning";
+                    document.getElementById("namesec").innerHTML=msg; 
+                }
+                else if (hour>12 && hour<16){
+                    msg="Hello "+name+" Good Afternoon";
+                    document.getElementById("namesec").innerHTML=msg;
+                }
+                else if(hour>16 && hour<23){
+                    msg="Hello "+name+" Good Evening";
+                    document.getElementById("namesec").innerHTML=msg;
+                }
+                else{
+                    msg="Greetings of the day";
+                    document.getElementById("namesec").innerHTML=msg;
+                }
+                
+                document.body.style.backgroundColor=bg;
+                
+            }
+            
+            
+        </script>
+        <!--JS Codes End-->
+    </body>
+</html>
